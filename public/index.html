@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app='angularJWT'>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular with JWTs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  </head>
+  <body>
+    <h1>Hello World!</h1>          <!-- canary test static page  -->
+    <h2>1 + 4 = {{ 1 + 4 }}</h2>   <!-- canary test angular -->
+    <ng-view></ng-view>
+    <!-- ng-view ties in with the template from app.js. In other words: ng-view tells ng-route inject the template betwn the ng-view tags
+
+    Ties in the front end route with front end view. -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+  <script type="text/javascript" src="/app.js"></script>
+  <script type="text/javascript" src="/login/login.controller.js"></script>
+  </body>
+</html>
